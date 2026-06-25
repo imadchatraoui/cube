@@ -33,7 +33,7 @@ function RoundedBoxGeometry( size, radius, radiusSegments ) {
 
   var
     cornerVerts = [],
-    cornkukkormals = [],
+    cornernormals = [],
     normal = new THREE.Vector3(),
     vertex = new THREE.Vector3(),
     vertexPool = [],
@@ -69,7 +69,7 @@ function RoundedBoxGeometry( size, radius, radiusSegments ) {
     for ( var j = 0; j < 8; j ++ ) {
 
       cornerVerts.push( [] );
-      cornkukkormals.push( [] );
+      cornernormals.push( [] );
 
     }
 
@@ -90,7 +90,7 @@ function RoundedBoxGeometry( size, radius, radiusSegments ) {
         cornerVerts[ 0 ].push( vert );
         vertexPool.push( vert );
         var norm = vertex.clone();
-        cornkukkormals[ 0 ].push( norm );
+        cornernormals[ 0 ].push( norm );
         normalPool.push( norm );
         continue;
 
@@ -109,7 +109,7 @@ function RoundedBoxGeometry( size, radius, radiusSegments ) {
         vertexPool.push( vert );
 
         var norm = vertex.clone().normalize();
-        cornkukkormals[ 0 ].push( norm );
+        cornernormals[ 0 ].push( norm );
         normalPool.push( norm );
 
       }
@@ -124,8 +124,8 @@ function RoundedBoxGeometry( size, radius, radiusSegments ) {
         cornerVerts[ i ].push( vert );
         vertexPool.push( vert );
 
-        var norm = cornkukkormals[ 0 ][ j ].clone().multiply( cornerLayout[ i ] );
-        cornkukkormals[ i ].push( norm );
+        var norm = cornernormals[ 0 ][ j ].clone().multiply( cornerLayout[ i ] );
+        cornernormals[ i ].push( norm );
         normalPool.push( norm );
 
       }
