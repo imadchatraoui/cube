@@ -16,15 +16,15 @@ class Themes {
         P: 0x08101a, // piece
         G: 0xd1d5db, // background
       },
-      kukko: {
-        U: 0xbad2f2, // pastel blue
-        D: 0xf4b7b6, // pastel coral
-        F: 0xdb9db4, // pastel mauve
-        R: 0xa0c980, // pastel green
-        B: 0xe3ad88, // pastel peach
-        L: 0xd1c170, // pastel yellow
-        P: 0xffffff, // piece (white)
-        G: 0xd1f3d8, // background (light mint)
+      erno: {
+        U: 0xffffff,
+        D: 0xffd500,
+        F: 0xc41e3a,
+        R: 0x0051ba,
+        B: 0xff5800,
+        L: 0x009e60,
+        P: 0x08101a,
+        G: 0x8abdff,
       },
       dust: {
         U: 0xfff6eb,

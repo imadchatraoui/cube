@@ -73,12 +73,12 @@ class Preferences {
       } ),
 
       theme: new Range( 'theme', {
-        value: { cube: 0, kukko: 1, dust: 2, camo: 3, rain: 4 }[ this.game.themes.theme ],
+        value: { cube: 0, erno: 1, dust: 2, camo: 3, rain: 4 }[ this.game.themes.theme ],
         range: [ 0, 4 ],
         step: 1,
         onUpdate: value => {
 
-          const theme = [ 'cube', 'kukko', 'dust', 'camo', 'rain' ][ value ]
+          const theme = [ 'cube', 'erno', 'dust', 'camo', 'rain' ][ value ]
           this.game.themes.setTheme( theme );
 
         },
