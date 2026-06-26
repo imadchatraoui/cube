@@ -70,24 +70,25 @@ class Themes {
 
   setTheme( theme = false, force = false ) {
 
-    if ( theme === this.theme && force === false ) return;
-    if ( theme !== false ) this.theme = theme;
+        if ( theme === this.theme && force === false ) return;
+        if ( theme !== false ) this.theme = theme;
 
-    const colors = this.getColors();
+        // AGGIUNGI QUESTO BLOCCO:
+        if (this.theme === 'kukko') {
+            this.colors['kukko'] = this.defaults['kukko'];
+        }
+        // FINE BLOCCO
 
-    this.game.dom.prefs.querySelectorAll( '.range__handle div' ).forEach( range => {
+        const colors = this.getColors();
 
-      range.style.background = '#' + colors.R.toString(16).padStart(6, '0');
+        this.game.dom.prefs.querySelectorAll( '.range__handle div' ).forEach( range => {
+          range.style.background = '#' + colors.R.toString(16).padStart(6, '0');
+        } );
 
-    } );
-
-    this.game.cube.updateColors( colors );
-
-    this.game.confetti.updateColors( colors );
-
-    this.game.dom.back.style.background = '#' + colors.G.toString(16).padStart(6, '0');
-
-  }
+        this.game.cube.updateColors( colors );
+        this.game.confetti.updateColors( colors );
+        this.game.dom.back.style.background = '#' + colors.G.toString(16).padStart(6, '0');
+      }
 
 }
 
