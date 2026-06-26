@@ -16,7 +16,7 @@ class Themes {
         P: 0x08101a, // piece
         G: 0xd1d5db, // background
       },
-      erno: {
+      kukko: {
         U: 0xffffff,
         D: 0xffd500,
         F: 0xc41e3a,
