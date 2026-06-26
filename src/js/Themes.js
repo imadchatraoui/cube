@@ -17,14 +17,14 @@ class Themes {
         G: 0xd1d5db, // background
       },
       kukko: {
-        U: 0xffffff,
-        D: 0xffd500,
-        F: 0xc41e3a,
-        R: 0x0051ba,
-        B: 0xff5800,
-        L: 0x009e60,
-        P: 0x08101a,
-        G: 0x8abdff,
+        U: 0xffb6c1, // Rosa pastello
+        D: 0xfdfd96, // Giallo pastello
+        F: 0xffb347, // Arancione pastello
+        R: 0x77dd77, // Verde pastello
+        B: 0xaec6cf, // Azzurrino pastello
+        L: 0xff6961, // Rosso pastello
+        P: 0xffffff, // Plastica interna (bianca, come nella tua foto)
+        G: 0xd6f5d6, // Sfondo (verde menta chiarissimo)
       },
       dust: {
         U: 0xfff6eb,

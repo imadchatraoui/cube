@@ -3258,14 +3258,14 @@
 	        G: 0xd1d5db, // background
 	      },
 		  kukko: {
-            U: 0xf8f9fa, // panna / bianco pastello
-            D: 0xfdfd96, // giallo pastello
-            F: 0xff6961, // rosso pastello
-            R: 0xaec6cf, // blu pastello
-            B: 0xffb347, // arancione pastello
-            L: 0x77dd77, // verde pastello
-            P: 0xffffff, // plastica interna (bianca per risaltare i pastelli)
-            G: 0xf1f5f9, // sfondo (grigio-azzurrino chiarissimo, perfetto per i pastelli)
+            U: 0xffb6c1, // Rosa pastello
+            D: 0xfdfd96, // Giallo pastello
+            F: 0xffb347, // Arancione pastello
+            R: 0x77dd77, // Verde pastello
+            B: 0xaec6cf, // Azzurrino pastello
+            L: 0xff6961, // Rosso pastello
+            P: 0xffffff, // Plastica interna (bianca, come nella tua foto)
+            G: 0xd6f5d6, // Sfondo (verde menta chiarissimo)
           },
 	      dust: {
 	        U: 0xfff6eb,
