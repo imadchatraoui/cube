@@ -3191,8 +3191,9 @@
 	      this.game.world.fov = parseFloat( preferences.fov );
 	      this.game.world.resize();
 
-	      this.game.themes.colors = preferences.colors;
-	      this.game.themes.setTheme( preferences.theme );
+		  this.game.themes.colors = Object.assign({}, this.game.themes.defaults, preferences.colors);
+		  if (preferences.theme === 'erno') preferences.theme = 'kukko';
+		  this.game.themes.setTheme( preferences.theme );
 
 	      return true;
 
